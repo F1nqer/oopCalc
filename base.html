@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calc.css">
+</head>
+<body>
+<form class="calc">
+    <p class="calc-display" id="mainsave" type="number">
+        <span id = "save" class="calc-display-saver" onfocus="this.blur()"></span>
+    </p>
+    <p class="calc-display">
+    <p id = "res" class="calc-display-input" onfocus="this.blur()">0</p>
+    </p>
+    <p class="calc-row">
+        <button type="button" class="calc-button calc-button-red" name="C" onclick="act.sbros()">C</button>
+        <button type="button" class="calc-button calc-button-gray" name="Del" onclick="act.chistka()">DEL</button>
+        <button type="button" class="calc-button calc-button-gray" name="ON" onclick="onoff()">ON</button>
+        <button type="button" class="calc-button calc-button-red calc-button-big" onclick="act.saving('/')">÷</button>
+    </p>
+    <p class="calc-row">
+        <button type="button" class="calc-button" name="seven" value="7" onclick="act.inp('7')">7</button>
+        <button type="button" class="calc-button" name="eight" value="8" onclick="act.inp('8')">8</button>
+        <button type="button" class="calc-button" name="nine" value="9" onclick="act.inp('9')">9</button>
+        <button type="button" class="calc-button calc-button-red calc-button-big" onclick="act.saving('*')">x</button>
+    </p>
+    <p class="calc-row">
+        <button type="button" class="calc-button" name="four" value="4" onclick="act.inp('4')">4</button>
+        <button type="button" class="calc-button" name="five" value="5" onclick="act.inp('5')">5</button>
+        <button type="button" class="calc-button" name="six" value="6" onclick="act.inp('6')">6</button>
+        <button type="button" class="calc-button calc-button-red calc-button-big" onclick="act.saving('-')">-</button>
+    </p>
+    <p class="calc-row">
+        <button type="button" class="calc-button" name="one" value="1" onclick="act.inp('1')">1</button>
+        <button type="button" class="calc-button" name="two" value="2" onclick="act.inp('2')">2</button>
+        <button type="button" class="calc-button" name="three" value="3" onclick="act.inp('3')">3</button>
+        <button type="button" class="calc-button calc-button-red calc-button-big" onclick="act.saving('+')">+</button>
+    </p>
+    <p class="calc-row">
+        <button type="button" class="calc-button" name="zero" value="0" onclick="act.inp('0')">0</button>
+        <button type="button" class="calc-button" name="tochka" value="." onclick="act.inp('.')">.</button>
+        <button type="button" class="calc-button" name="dzero" value="00" onclick="act.inp('00')">00</button>
+        <button type="button" class="calc-button calc-button-yellow calc-button-big" onclick="act.action(act.what)">=</button>
+    </p>
+</form>
+
+    <script src="func.js"></script>
+</body>
+</html>
